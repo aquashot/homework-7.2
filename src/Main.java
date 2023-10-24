@@ -31,15 +31,22 @@ public class Main {
             System.out.println("год"+year+"численность составляет"+countryY);
         }
         System.out.println("задача 4");
-        int mounthvklad=15000;
-        int totalvklad=12000000;
-        int procentmounth=7;
-        int totalm=1;
-        int mounthsproc=1;
-        while (totalvklad <12000000) {
-            mounthsproc=(mounthvklad/100)*procentmounth;
-            totalvklad=totalvklad/mounthsproc;
-            System.out.println(mounthsproc+"будет увеличиваться каждый месяц на и понадобиться"+totalm+"чтобы накопить");
+        double current = 15_000;
+        double target = 12_000_000;
+        for (int month = 0; current < target; month++) {
+            current=current*1.07;
+            System.out.println("месяц равен"+month+"сумма накполений"+current);
+        }
+        System.out.println("задача 5");
+        double cuRrent = 15_000;
+        double taRget = 12_000_000;
+        for (int Month =0; cuRrent < taRget; Month=+6) {
+                cuRrent = cuRrent * 1.07;
+                System.out.println("месяц равен" + Month + "сумма накполений" + cuRrent);
+            }
+        System.out.println("Задача 6");
+
+
         }
     }
-}
+
